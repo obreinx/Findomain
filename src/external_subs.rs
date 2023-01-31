@@ -26,6 +26,9 @@ pub fn get_amass_subdomains(
             .args(&mut vec![
                 "enum",
                 "-passive",
+                -"noalts"
+                -"norecursive"
+               
                 // amass database can increase the time to get subdomains, making it slower
                 // let's disable it for now
                 "-nolocaldb",
